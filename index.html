@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+<h1>Connect 4</h1>
+<div id="game">
+  <form id="sizeForm" action="">
+    <span>Board Size:  </span>
+    <label for="rowNum">   Rows </label>
+    <input id="rowNum" type="number" value=6>
+    <label for="columnNum">   Columns </label>
+    <input id="columnNum" type="number" value=7>
+    <button>OK</button>
+  </form>
+
+  <div class="player-intro">
+    <div id="p1" class="introPiece"></div>
+    <div class="introPlayer">Player 1</div>    
+    <div id="p2" class="introPiece"></div>
+    <div class="introPlayer">Player 2</div>
+  </div>
+
+  <table id="board"></table>
+  <button id="restartBtn">Restart</button>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
